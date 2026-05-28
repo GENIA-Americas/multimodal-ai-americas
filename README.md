@@ -195,7 +195,7 @@ coding standards, and research submission process.
 
 | Purpose        | Address                  |
 |----------------|--------------------------|
-| General        | admin@RaceFor.AI          |
+| General        | racefor.ai/contact       |
 | Research       | admin@genia.ai           |
 | Press          | prensa@genia.ai          |
 | Partnership    | admin@genia.ai           |
