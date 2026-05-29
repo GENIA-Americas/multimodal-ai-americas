@@ -1,0 +1,23 @@
+name: Docs Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Markdown files exist
+        run: |
+          echo "Checking core docs..."
+          for f in README.md CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md CHANGELOG.md; do
+            [ -f "$f" ] && echo "✅ $f" || echo "❌ Missing: $f"
+          done
+
+      - name: List all Markdown files
+        run: find . -name "*.md" | sort

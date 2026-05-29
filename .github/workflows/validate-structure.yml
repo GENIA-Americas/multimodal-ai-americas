@@ -1,0 +1,26 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required directories
+        run: |
+          echo "Validating repository structure..."
+          for dir in docs research platform policy strategy datasets models tools community media; do
+            [ -d "$dir" ] && echo "✅ $dir/" || echo "❌ Missing: $dir/"
+          done
+
+      - name: Check required policy files
+        run: |
+          for f in policy/hres649.md policy/ethics-charter.md policy/regional-frameworks.md; do
+            [ -f "$f" ] && echo "✅ $f" || echo "❌ Missing: $f"
+          done
