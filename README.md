@@ -1,5 +1,8 @@
 # GENIA Americas — Multimodal AI Research Repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20437260.svg)](https://doi.org/10.5281/zenodo.20437260)
+
+
 The canonical open research repository for indigenous, federated, and
 regionally-grounded AI development across the Western Hemisphere.
 
