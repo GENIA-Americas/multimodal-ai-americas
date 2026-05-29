@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "GENIA Americas Multimodal AI Research Repository"
+message: "If you use this repository or the AmeriNLI benchmark in your research, please cite it as below."
+type: dataset
+authors:
+  - family-names: Castro Quiles
+    given-names: Felipe
+    affiliation: GENIA Americas Corporation
+    email: admin@genia.ai
+repository-code: "https://github.com/GENIA-Americas/multimodal-ai-americas"
+url: "https://www.racefor.ai"
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2026-05-29"
+keywords:
+  - natural language inference
+  - Latin American Spanish
+  - multilingual NLP
+  - federated AI
+  - Americas

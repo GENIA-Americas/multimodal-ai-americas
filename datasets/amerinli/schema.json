@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AmeriNLI Record",
+  "type": "object",
+  "required": ["premise", "hypothesis", "label", "region", "domain"],
+  "properties": {
+    "premise":     { "type": "string", "minLength": 10 },
+    "hypothesis":  { "type": "string", "minLength": 5 },
+    "label":       { "type": "string", "enum": ["entailment", "neutral", "contradiction"] },
+    "region":      { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "domain":      { "type": "string", "enum": ["news", "legal", "agriculture", "health", "education", "commerce", "culture", "environment"] },
+    "contributor": { "type": "string" },
+    "notes":       { "type": "string" }
+  },
+  "additionalProperties": false
+}
