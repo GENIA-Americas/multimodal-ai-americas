@@ -213,3 +213,12 @@ Licensed under Apache 2.0. Research papers and policy documents carry
 individual attribution — see file headers.
 
 (c) 2026 GENIA Americas Corporation. All rights reserved.
+
+---
+
+## Models on Hugging Face
+
+| Model | Task | Link |
+|-------|------|------|
+| AmeriXLM | Multilingual LM for Latin American Spanish and Brazilian Portuguese | https://huggingface.co/genia-americas/ameri-xlm |
+| HarvestNet | Crop yield prediction for Brazil, Argentina, and Mexico | https://huggingface.co/genia-americas/harvest-net |
