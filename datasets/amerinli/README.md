@@ -30,3 +30,11 @@ Example: jsmith_MX.jsonl
 ## Contact
 
 admin@genia.ai
+
+## Status
+
+- `sample.jsonl`: a small seed sample.
+- `submissions/`: empty. Contributions are welcome, see CONTRIBUTING.md.
+- Scope of this README: Latin American Spanish. `research/benchmarks/README.md` also mentions Brazilian Portuguese and a 12,000-pair target, which this README does not cover yet.
+- Check a file before submitting: `python3 tools/validate_amerinli.py path/to/file.jsonl`
+

@@ -20,6 +20,8 @@ regardless of its global benchmark performance.
 
 ## Registry
 
+> Note: the directories in these tables are not in this repo yet (`models/` only holds this file). Statuses describe intent, not released artifacts. Check each model's own repo or Hub page for what is actually downloadable. AmeriXLM is planned and has no weights.
+
 ### NLP Models
 
 | Model | Task | Languages | Parameters | Status | Directory |

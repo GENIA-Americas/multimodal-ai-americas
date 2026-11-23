@@ -17,7 +17,7 @@ on data distributions that underrepresent the hemisphere and do not
 test for the failure modes that matter in production here.
 
 These benchmarks are designed to be runnable, citable, and extensible.
-They are not aspirational — they reflect real deployment conditions.
+Several are still being built. Each section below says what exists in this repo today.
 
 ---
 
@@ -27,8 +27,8 @@ They are not aspirational — they reflect real deployment conditions.
 
 | Benchmark | Task | Languages | Status | Directory |
 |-----------|------|-----------|--------|-----------|
-| AmeriNLI | Natural language inference | es-LA, pt-BR | Active | nlp/ameri-nli/ |
-| RegioNER | Named entity recognition | es-LA, pt-BR | Active | nlp/regio-ner/ |
+| AmeriNLI | Natural language inference | es-LA, pt-BR | Seed sample only | datasets/amerinli/ |
+| RegioNER | Named entity recognition | es-LA, pt-BR | Planned | n/a |
 | CorridorQA | Question answering | es-LA, pt-BR, en | Proposed | nlp/corridor-qa/ |
 | IndigenousNLP | Text classification | qu, gn, nah | In development | nlp/indigenous/ |
 
@@ -56,6 +56,8 @@ They are not aspirational — they reflect real deployment conditions.
 ---
 
 ## AmeriNLI
+
+> Status: only a small sample (`datasets/amerinli/sample.jsonl`) is published in this repo. The figures under Data describe the full design, and the full dataset is not available here yet.
 
 ### Overview
 
@@ -88,6 +90,8 @@ Secondary: per-domain accuracy, per-language accuracy, macro-F1
 
 ### Baseline Results
 
+> Unverified. No evaluation code or logs for these numbers are in this repo yet. Treat them as unconfirmed until scripts and result files are committed.
+
 | Model | es-LA Accuracy | pt-BR Accuracy | Notes |
 |-------|---------------|----------------|-------|
 | mBERT | 71.3 | 69.8 | Multilingual BERT baseline |
@@ -96,6 +100,8 @@ Secondary: per-domain accuracy, per-language accuracy, macro-F1
 | GPT-4 (zero-shot) | 82.1 | 81.7 | Zero-shot, API-based evaluation |
 
 ### Running the Benchmark
+
+> Planned. `research/benchmarks/nlp/ameri-nli/` is not in this repo yet, so these commands do not run today.
 
 ```bash
 cd research/benchmarks/nlp/ameri-nli
@@ -124,6 +130,8 @@ If you use AmeriNLI in your research, cite:
 ---
 
 ## RegioNER
+
+> Status: planned. No RegioNER data or code is in this repo yet.
 
 ### Overview
 
@@ -154,6 +162,8 @@ Primary: entity-level F1
 Secondary: per-entity-type F1, per-country F1
 
 ### Baseline Results
+
+> Unverified. No evaluation code or logs for these numbers are in this repo yet. Treat them as unconfirmed until scripts and result files are committed.
 
 | Model | es-LA F1 | pt-BR F1 |
 |-------|----------|----------|
