@@ -1,0 +1,26 @@
+name: AmeriNLI
+
+on:
+  pull_request:
+    paths:
+      - "datasets/amerinli/**"
+      - "tools/validate_amerinli.py"
+      - "tools/amerinli_stats.py"
+  push:
+    branches: [main]
+    paths:
+      - "datasets/amerinli/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate every JSONL file
+        run: |
+          files=$(find datasets/amerinli -name '*.jsonl' | sort)
+          python3 tools/validate_amerinli.py $files
+      - name: Print dataset statistics
+        run: |
+          files=$(find datasets/amerinli -name '*.jsonl' | sort)
+          python3 tools/amerinli_stats.py $files

@@ -4,12 +4,13 @@ Honest status first: AmeriXLM is not trained, and AmeriNLI and RegioNER are not 
 
 ## 1. Make the docs match reality
 - [x] Hub model card states "not trained yet"
-- [ ] Repo docs mark unverified numbers and missing code (this PR)
+- [x] Repo docs mark unverified numbers and missing code
 
 ## 2. AmeriNLI v0.1 (real data, small and honest)
-- [ ] Validator in `tools/` (added)
+- [x] Validator, stats script, and CI in `tools/` and `.github/workflows/`
 - [ ] First batch of contributed examples under `datasets/amerinli/submissions/`
-- [ ] Annotation guidelines and agreement numbers published
+- [x] Writing guidelines (`datasets/amerinli/GUIDELINES.md`)
+- [ ] Agreement numbers published
 - [ ] Dataset card and release on the Hugging Face Hub
 
 ## 3. Baselines anyone can reproduce
