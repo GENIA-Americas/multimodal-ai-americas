@@ -21,6 +21,10 @@ Optional fields: contributor (GitHub username), notes
 Allowed label values: entailment, neutral, contradiction
 Allowed domain values: news, legal, agriculture, health, education, commerce, culture, environment
 
+## Writing guidelines
+
+See [GUIDELINES.md](GUIDELINES.md) for how to write and label examples.
+
 ## Submission Naming Convention
 
 datasets/amerinli/submissions/<github-username>_<region>.jsonl

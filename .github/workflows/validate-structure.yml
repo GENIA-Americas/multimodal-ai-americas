@@ -11,16 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Check required directories
+      - name: Check required directories and policy files
         run: |
-          echo "Validating repository structure..."
+          missing=0
           for dir in docs research platform policy strategy datasets models tools community media; do
-            [ -d "$dir" ] && echo "✅ $dir/" || echo "❌ Missing: $dir/"
+            [ -d "$dir" ] || { echo "Missing directory: $dir/"; missing=1; }
           done
-
-      - name: Check required policy files
-        run: |
           for f in policy/hres649.md policy/ethics-charter.md policy/regional-frameworks.md; do
-            [ -f "$f" ] && echo "✅ $f" || echo "❌ Missing: $f"
+            [ -f "$f" ] || { echo "Missing file: $f"; missing=1; }
           done
+          exit $missing

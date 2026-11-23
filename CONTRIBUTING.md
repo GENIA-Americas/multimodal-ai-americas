@@ -13,7 +13,7 @@
 5. Push your branch and open a pull request against main.
 6. Reference the relevant issue number in your PR description.
 
-For AmeriNLI submissions, see datasets/amerinli/README.md for format requirements.
+For AmeriNLI submissions, read datasets/amerinli/GUIDELINES.md and see datasets/amerinli/README.md for format requirements. The `AmeriNLI` workflow validates every dataset pull request.
 
 ## Review Process
 
