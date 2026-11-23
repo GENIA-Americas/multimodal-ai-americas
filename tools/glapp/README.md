@@ -1,64 +1,68 @@
-# GLAPP — Glapagos SDK
+# GLAPP (Glapagos SDK), draft
 
-GENIA Americas Corporation
-https://www.glapagos.com
+**Status: design draft. Nothing here is installable yet.** As of 2026-11-23 there is no `glapagos-sdk` package on PyPI and no `@genia-americas/glapagos` package on npm, and this repo contains no SDK code. The snippets below sketch the interface we intend to build so contributors can critique it before code exists. They will not run.
 
-## Installation
+## Intended interface (illustrative)
 
-pip install glapagos-sdk
-npm install @genia-americas/glapagos
+Authentication with client credentials:
 
-## Authentication
-
+```python
 from glapagos import GlapagosClient
+
 client = GlapagosClient(client_id="...", client_secret="...")
-
-Or via environment variables:
-export GLAPAGOS_CLIENT_ID=...
-export GLAPAGOS_CLIENT_SECRET=...
+# or read GLAPAGOS_CLIENT_ID and GLAPAGOS_CLIENT_SECRET from the environment
 client = GlapagosClient()
+```
 
-## Core Operations
+Models and inference:
 
-# List models
+```python
 models = client.models.list()
 
-# Run inference
 result = client.models.predict(
-    model_id="ameri-xlm-v1",
+    model_id="<model-id>",
     inputs=[{"text": "Texto en español latinoamericano", "language": "es-LA"}],
-    task="classification"
+    task="classification",
 )
+```
 
-# Create a pipeline
+Data pipelines and compliance:
+
+```python
 pipeline = client.pipelines.create(
-    name="conab-ingestion",
-    source={"type": "http", "url": "https://www.conab.gov.br/api/crops", "format": "json"},
-    schema="agriculture-production",
+    name="example-ingestion",
+    source={"type": "http", "url": "https://example.org/data.json", "format": "json"},
+    schema="<schema-name>",
     jurisdiction="BR",
-    schedule="0 6 * * *"
+    schedule="0 6 * * *",
 )
 
-# Check compliance
 status = client.compliance.status(jurisdiction="BR")
+```
 
-# Start federated training
+Federated training:
+
+```python
 job = client.federation.train(
-    model_config="regional-nlp/ameri-xlm/config.yaml",
-    nodes=["node_br_01", "node_co_01", "node_mx_01"],
+    model_config="path/to/config.yaml",
+    nodes=["<node-id-1>", "<node-id-2>"],
     rounds=10,
-    privacy_budget=1.0
+    privacy_budget=1.0,
 )
+```
 
-## CLI
+Command line:
 
+```bash
 glapp models list
-glapp predict --model ameri-xlm-v1 --input data.jsonl --output results.jsonl
+glapp predict --model <model-id> --input data.jsonl --output results.jsonl
 glapp compliance check --jurisdiction BR
+```
+
+The matching HTTP API draft is in [platform/api](../../platform/api/README.md).
 
 ## Contributing
 
-Issues tagged sdk in the issue tracker. Contributions follow CONTRIBUTING.md.
+Feedback on the interface is the most useful thing right now. Open an issue tagged `sdk`. Workflow: [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 Contact: admin@genia.ai
-https://docs.glapagos.com
