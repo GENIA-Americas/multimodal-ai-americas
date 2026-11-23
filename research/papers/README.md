@@ -1,68 +1,36 @@
 # Research Papers
 
-GENIA Americas Corporation / RaceFor.AI
-Open Research Repository
+Working papers and preprints produced by or with GENIA Americas, the RaceFor.AI network, and affiliated researchers. Submissions follow [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
----
-
-## About This Directory
-
-This directory contains working papers, preprints, and published
-research produced by or in collaboration with GENIA Americas, the
-RaceFor.AI network, and affiliated researchers.
-
-All submissions must follow the process in CONTRIBUTING.md.
-
----
-
-## Index
-
-### Foundational Papers
+## In this repository
 
 | Title | Authors | Year | Status | File |
 |-------|---------|------|--------|------|
-| The AI Corridor of the Americas: Architecture and Rationale | Felipe Castro Quiles | 2024 | Working paper | ai-corridor-architecture.md |
-| Digital Non-Alignment: A Framework for Hemispheric AI Sovereignty | GENIA Americas | 2024 | Working paper | digital-non-alignment.md |
-| Federated AI Across Jurisdictions: Challenges in the Latin American Context | GENIA Americas | 2025 | Working paper | federated-ai-latam.md |
+| The AI Corridor of the Americas: Architecture and Rationale | Felipe Castro Quiles | 2024 | Working paper | [castro-quiles-2024-ai-corridor-architecture.md](castro-quiles-2024-ai-corridor-architecture.md) |
+| Analysis of H.Res.649 (118th U.S. Congress) | GENIA Americas | 2023 | Policy note | [policy/hres649.md](../../policy/hres649.md) |
 
-### NLP and Language
+## Planned, not yet written
 
-| Title | Authors | Year | Status | File |
-|-------|---------|------|--------|------|
-| Low-Resource NLP for Indigenous Languages of the Americas: A Survey | Open — seeking contributors | — | Proposed | — |
-| Multilingual Benchmarks for Spanish and Portuguese Regional Variants | Open — seeking contributors | — | Proposed | — |
+| Title | Status |
+|-------|--------|
+| Digital Non-Alignment: A Framework for Hemispheric AI Sovereignty | Planned |
+| Federated AI Across Jurisdictions: Challenges in the Latin American Context | Planned |
+| Low-Resource NLP for Indigenous Languages of the Americas: A Survey | Seeking contributors |
+| Multilingual Benchmarks for Spanish and Portuguese Regional Variants | Seeking contributors |
+| Comparative AI Regulatory Frameworks: North vs. South America | Seeking contributors |
+| Precision Agriculture AI in Latin America: Data Gaps and Opportunities | Seeking contributors |
+| Supply Chain Resilience Through AI: Case Studies from the Americas | Seeking contributors |
 
-### Governance and Policy
+## How to submit a paper
 
-| Title | Authors | Year | Status | File |
-|-------|---------|------|--------|------|
-| H.Res.649 and the Case for Hemispheric AI Governance | GENIA Americas | 2023 | Published | see policy/hres649.md |
-| Comparative AI Regulatory Frameworks: North vs. South America | Open — seeking contributors | — | Proposed | — |
+1. Open an issue with the Research Proposal template (`.github/ISSUE_TEMPLATE/`).
+2. Wait for a maintainer to respond before opening a pull request.
+3. Name the file `lastname-year-short-title.md` or `.pdf`.
+4. Add a row to the index above.
 
-### Applied AI
+## Format
 
-| Title | Authors | Year | Status | File |
-|-------|---------|------|--------|------|
-| Precision Agriculture AI in Latin America: Data Gaps and Opportunities | Open — seeking contributors | — | Proposed | — |
-| Supply Chain Resilience Through AI: Case Studies from the Americas | Open — seeking contributors | — | Proposed | — |
-
----
-
-## How to Submit a Paper
-
-1. Open an issue using the Research Proposal template in
-   .github/ISSUE_TEMPLATE/
-2. Wait for maintainer acknowledgment before submitting a pull request
-3. Follow formatting standards in CONTRIBUTING.md
-4. Place the file in this directory using the naming convention:
-   `lastname-year-short-title.md` or `.pdf`
-5. Add an entry to the index table above
-
----
-
-## Formatting Standards
-
-Papers submitted as Markdown must include the following front matter:
+Markdown papers start with this front matter:
 
 ```
 Title:
@@ -74,22 +42,18 @@ Abstract:
 Keywords:
 ```
 
-Papers submitted as PDF must include a corresponding Markdown abstract
-file with the same front matter.
+A PDF submission needs a Markdown abstract file with the same front matter.
 
----
+## Open topics
 
-## Open Research Calls
+Open an issue if you want to lead or contribute to any of these:
 
-The following topics are actively sought. Researchers interested in
-leading or contributing to these papers should open an issue:
-
-- Bias auditing methodologies for regional economic datasets
+- Bias auditing for regional economic datasets
 - AI in public health systems across Latin America
 - Federated learning under heterogeneous regulatory environments
-- Municipal AI deployment: lessons from early Corridor implementations
-- Climate modeling with hemisphere-native environmental data
-- Financial inclusion through AI in underbanked populations
-- Ethics review processes adapted to civil law jurisdictions
+- Municipal AI deployment: lessons from early implementations
+- Climate modeling with regional environmental data
+- Financial inclusion and AI for underbanked populations
+- Ethics review adapted to civil law jurisdictions
 
 Contact: admin@genia.ai

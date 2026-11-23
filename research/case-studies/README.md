@@ -1,26 +1,32 @@
 # Case Studies
 
-GENIA Americas Corporation / RaceFor.AI
+Format and index for case studies of AI deployments in the Americas.
 
-This directory documents real-world AI deployments within the AI Corridor
-of the Americas. Each case study follows a standard format: context,
-problem, approach, results, lessons. Claims are grounded in documented
-outcomes, not projected impacts.
+**Current state:** one case study, and it is an illustrative composite, not a single documented deployment. Its figures are not independently verified and should not be cited as measured results.
 
 ## Index
 
-| Title | Sector | Country | Year |
-|-------|--------|---------|------|
-| Municipal Service Automation: Pilot in Urban Latin America | Public sector | Regional | 2024 |
-| Crop Yield Prediction at Scale: Lessons from Brazilian Agribusiness | Agriculture | Brazil | 2024 |
-| Cross-Border Compliance: Deploying AI Across Three Jurisdictions | Platform | Regional | 2025 |
-| Financial Inclusion Through Alternative Credit Scoring | Fintech | Regional | 2024 |
+| Title | Sector | Region | Year | Type |
+|-------|--------|--------|------|------|
+| [Municipal Service Automation: Pilot in Urban Latin America](municipal-service-automation-2024.md) | Public sector | Urban Latin America | 2024 | Composite, details combined to protect partner confidentiality |
 
-## Submission
+## Wanted
 
-Case studies may be submitted by any organization that has deployed AI
-within the Corridor. Submissions must document a real deployment, report
-actual outcomes against defined metrics, disclose limitations and failure
-modes, and be approved for publication by the deploying organization.
+- Crop yield prediction in agribusiness
+- Cross-border compliance across jurisdictions
+- Financial inclusion and alternative credit scoring
 
-Contact admin@genia.ai to begin the submission process.
+## Format
+
+Context, problem, approach, results, failure modes, lessons.
+
+## Submitting
+
+A submission must:
+
+- Describe a real deployment, or say clearly that it is a composite or illustration
+- Define each metric and how it was measured
+- Report limitations and failure modes, not only successes
+- Have the approval of the deploying organization to publish
+
+Contact admin@genia.ai to start.
