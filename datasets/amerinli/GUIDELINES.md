@@ -63,3 +63,14 @@ Starting small is fine. 20 to 50 careful examples is a useful first submission.
 - No copied text, personal data, or offensive content
 - The region and domain fields are accurate
 - No negation shortcut or near-duplicate pairs
+
+## No GitHub account? Use a spreadsheet
+
+Copy [submission_template.csv](submission_template.csv), fill in one example per row, and send it to the maintainers. Spanish column headers (`premisa`, `hipótesis`, `etiqueta`, `región`, `dominio`) and Spanish labels (`implicación`, `neutral`, `contradicción`) are accepted. A maintainer converts the file, credits you in the `contributor` field, and opens the pull request:
+
+```bash
+python3 tools/csv_to_jsonl.py examples.csv --contributor "Your Name" \
+    --out datasets/amerinli/submissions/<name>_<region>.jsonl
+```
+
+Nothing is written if any row has a problem, and the error says which row.
