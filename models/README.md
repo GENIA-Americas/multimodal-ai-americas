@@ -24,7 +24,7 @@ regardless of its global benchmark performance.
 
 | Model | Task | Languages | Parameters | Status | Directory |
 |-------|------|-----------|------------|--------|-----------|
-| AmeriXLM | Multilingual LM | es-LA, pt-BR, en | 270M | Active | regional-nlp/ameri-xlm/ |
+| AmeriXLM | Multilingual LM | es-LA, pt-BR, en | TBD | Planned (not trained) | n/a |
 | CorridorNER | Named entity recognition | es-LA, pt-BR | 110M | Active | regional-nlp/corridor-ner/ |
 | IndigenousLM | Language modeling | qu, gn, nah | 125M | In development | regional-nlp/indigenous-lm/ |
 
@@ -52,75 +52,28 @@ regardless of its global benchmark performance.
 
 ## AmeriXLM
 
-### Overview
+**Status: planned, not trained.** There are no weights yet. The Hugging Face repo (`genia-americas/ameri-xlm`) is a placeholder and says the same thing.
 
-AmeriXLM is a multilingual language model pre-trained on a corpus
-weighted toward Latin American Spanish and Brazilian Portuguese text.
-It is the base model for most NLP work in the Corridor.
+### Motivation
 
-The motivation for a regionally-trained base model is straightforward:
-XLM-R and mBERT allocate training compute in proportion to the volume
-of text available per language. Latin American Spanish and Brazilian
-Portuguese receive less compute than Castilian Spanish and European
-Portuguese, which in turn receive far less than English. Regional
-linguistic variation is underrepresented even within Spanish and
-Portuguese allocations.
+XLM-R and mBERT split their training compute roughly by how much text exists per language. That likely leaves Latin American Spanish and Brazilian Portuguese underweighted. AmeriXLM is meant to be an encoder trained on a corpus that weights regional text on purpose. Whether it beats existing models is something we still have to measure.
 
-AmeriXLM corrects this by training on a corpus that explicitly
-weights Latin American regional text.
+### Planned design
 
-### Architecture
+Targets only. Any of this can change.
 
-- Base: RoBERTa architecture
-- Parameters: 270M
-- Vocabulary: 64,000 tokens, trained on regional corpus
-- Pre-training: masked language modeling, 1M steps
-- Context length: 512 tokens
+- RoBERTa-style encoder, masked language modeling, 512 token context
+- Languages: es-LA, pt-BR, English, plus Quechua, Guarani, and Nahuatl
+- Regional tokenizer
+- Size, vocabulary, and training budget: not decided
 
-### Training Data
+### Evaluation plan
 
-- Brazilian Portuguese: 45B tokens (news, government, legal, web)
-- Latin American Spanish: 38B tokens (news, government, legal, web)
-- English (Americas): 12B tokens (news, government)
-- Indigenous languages: 800M tokens (Quechua, Guarani, Nahuatl)
-
-Data sources documented in datasets/README.md.
-
-### Benchmark Results
-
-| Benchmark | Score | Baseline (XLM-R large) | Delta |
-|-----------|-------|----------------------|-------|
-| AmeriNLI es-LA | 83.7 | 79.4 | +4.3 |
-| AmeriNLI pt-BR | 82.9 | 78.2 | +4.7 |
-| RegioNER es-LA F1 | 88.2 | 86.7 | +1.5 |
-| RegioNER pt-BR F1 | 87.6 | 85.3 | +2.3 |
-
-### Usage
-
-```python
-from transformers import AutoTokenizer, AutoModel
-
-tokenizer = AutoTokenizer.from_pretrained("genia-americas/ameri-xlm")
-model = AutoModel.from_pretrained("genia-americas/ameri-xlm")
-
-inputs = tokenizer("Texto en español latinoamericano", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-Model weights: Hugging Face Hub — genia-americas/ameri-xlm
-Model card: regional-nlp/ameri-xlm/MODEL_CARD.md
+AmeriXLM will be evaluated on AmeriNLI and RegioNER (see `research/benchmarks/`). There are no AmeriXLM scores yet. They get added here when the model exists and the eval code is public.
 
 ### Citation
 
-```
-@techreport{genia2025amerixlm,
-  title={AmeriXLM: A Multilingual Language Model for the Americas},
-  author={GENIA Americas Corporation},
-  institution={GENIA Americas / RaceFor.AI},
-  year={2025},
-  url={https://github.com/GENIA-Americas/multimodal-ai-americas}
-}
-```
+Not citable as a released model. A citation entry will be added with the weights and a report.
 
 ---
 
