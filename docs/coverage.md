@@ -2,6 +2,8 @@
 
 ## Active Regions (12+)
 
+The 12+ figure is not independently published, and some engagements are confidential. This table lists only what is publicly disclosed.
+
 ### North America
 | Nation | Status | Focus Areas |
 |--------|--------|-------------|

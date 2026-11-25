@@ -14,50 +14,37 @@ United States to lead a regional artificial intelligence strategy across
 the Americas.
 
 Full text: https://www.congress.gov/bill/118th-congress/house-resolution/649
+Introduced text (GPO): https://www.congress.gov/118/bills/hres649/BILLS-118hres649ih.htm
 
 The proposal was designed to advance inclusive AI systems, confront
-systemic bias, and promote social justice, economic opportunity, and
+systemic bias, and promote social justice, economic well-being, and
 democratic values across the hemisphere.
 
 ---
 
 ## Status
 
-H.Res.649 remained pending at the close of the 118th Congress and was
-not enacted. However, its core vision has not stalled with the
-legislative process. On the contrary, it has gained momentum and is
-increasingly shaping the global policy conversation on inclusive AI
-governance, regional cooperation, and equitable technological
-development.
+H.Res.649 is a non-binding House resolution. It was introduced on August 8, 2023 by Rep. Adriano Espaillat and referred to the Committee on Foreign Affairs and, in addition, the Committee on Science, Space, and Technology. No later action is recorded, and the resolution lapsed at the end of the 118th Congress. See Congress.gov for the full action history.
 
-RaceFor.AI continues to advance this agenda by translating principles
-into action through policy leadership, cross-sector engagement, and the
-deployment of AI systems that operationalize fairness, accountability,
-and shared prosperity.
+A resolution with the same title, H.Res.836, was introduced in the 119th Congress on October 28, 2025 and showed as pending in committee on LegiScan when checked on November 24, 2026. Text: https://www.govinfo.gov/content/pkg/BILLS-119hres836ih/html/BILLS-119hres836ih.htm
+
+GENIA Americas and RaceFor.AI continue to work on the themes the resolution raises, through the research, datasets, and tools in this repository.
 
 ---
 
-## Core Principles of H.Res.649
+## What the Resolution Says
 
-The resolution advanced three foundational arguments:
+Its operative clauses state that the House:
 
-**1. Regional AI strategy requires regional ownership**
-A hemispheric AI framework cannot be designed exclusively by one nation
-and imposed on others. Effective strategy requires participation,
-co-design, and shared governance across the 35 nations of the Americas.
+1. Applauds the White House Office of Science and Technology Policy for publishing the Blueprint for an AI Bill of Rights.
+2. Declares inclusive AI research, design, use, regulation, and deployment a priority of U.S. domestic and foreign policy, and urges a safe and responsible Regional AI Strategy in the Americas.
+3. Declares the safe design, use, development, and deployment of AI in the Western Hemisphere a strategic priority.
+4. Declares the creation of a domestic and international ratified agreement on the design, use, and deployment of automated systems a strategic priority.
+5. Calls on the U.S. Government to use funding from economic and international development agencies to invest in AI education, training, and infrastructure throughout the Western Hemisphere.
+6. Calls on the U.S. Government to support common ethical frameworks, standards, and regulations for AI development and deployment in the hemisphere.
+7. Calls on the U.S. Government to increase cooperation with international organizations, such as the Organization of American States and the Inter-American Development Bank, on ethical rules for AI governance, investment, and development.
 
-**2. Systemic bias in AI systems causes systemic harm**
-AI systems trained on narrow, non-representative datasets reproduce and
-amplify existing inequalities. The resolution called for explicit
-commitments to diverse, regionally representative training data and
-ongoing bias auditing.
-
-**3. Equitable access to AI infrastructure is a matter of democratic
-values**
-When AI infrastructure is controlled by a small number of external
-actors, participating nations lose the ability to shape their own
-technological futures. The resolution advocated for shared,
-interoperable, open infrastructure.
+The preamble raises concerns about bias in AI systems, including documented accuracy disparities in facial recognition, and about "digital colonialism", where AI used across the hemisphere is developed and controlled by a few countries outside the region. It states a goal of collaborative development in which no single country dominates AI.
 
 ---
 
@@ -113,19 +100,18 @@ Ongoing legislative tracking: https://www.congress.gov
 
 ---
 
-## How This Shapes the Platform
+## How This Relates to the Platform
 
-The policy commitments in H.Res.649 are not aspirational for GENIA
-Americas. They are architectural requirements for Glapagos:
+GENIA Americas treats several themes of the resolution as design goals for Glapagos. The table states each goal and where it stands in the public repositories.
 
-| Policy Commitment        | Glapagos Implementation                       |
-|--------------------------|-----------------------------------------------|
-| Regional ownership       | Federated architecture, no data centralization |
-| Bias mitigation          | Regional benchmark suite, audit tooling        |
-| Open infrastructure      | Open-source core, documented APIs              |
-| Data sovereignty         | Jurisdiction-level data governance controls    |
-| Talent development       | Training programs, certification pathways      |
-| Contextual ethics        | Jurisdiction-specific compliance modules       |
+| Theme | Design goal | Where it stands |
+|-------|-------------|-----------------|
+| Regional ownership | Federated architecture, no data centralization | Described in [docs/architecture.md](../docs/architecture.md). Not implemented in this repository. |
+| Bias measurement | Regional benchmarks and audit tooling | Benchmarks are proposed in [research/benchmarks](../research/benchmarks/). Audit tooling is not published. |
+| Open infrastructure | Open-source core, documented APIs | The backend is open source (Glapagos-Backend, MIT) with API docs in that repository. |
+| Data sovereignty | Jurisdiction-level data governance controls | Design goal. Not published here. |
+| Talent development | Training programs, certification pathways | Not covered in this repository. |
+| Contextual ethics | Jurisdiction-specific compliance modules | Ethics charter in [policy/ethics-charter.md](ethics-charter.md). Modules are not published. |
 
 ---
 
