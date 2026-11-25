@@ -8,10 +8,10 @@ Policy and Governance Division
 
 ## Background
 
-In the summer of 2023, GENIA Americas formally presented recommendations
-on House Resolution 649 (118th Congress), a proposal calling on the
-United States to lead a regional artificial intelligence strategy across
-the Americas.
+House Resolution 649 (118th Congress), introduced in August 2023, calls on
+the United States to champion a regional artificial intelligence strategy in
+the Americas. This note summarizes the resolution and sets out GENIA Americas'
+positions on the themes it raises.
 
 Full text: https://www.congress.gov/bill/118th-congress/house-resolution/649
 Introduced text (GPO): https://www.congress.gov/118/bills/hres649/BILLS-118hres649ih.htm
@@ -48,9 +48,9 @@ The preamble raises concerns about bias in AI systems, including documented accu
 
 ---
 
-## GENIA Americas' Recommendations
+## GENIA Americas' Positions
 
-In its 2023 submission, GENIA Americas advanced the following positions:
+GENIA Americas' positions on these themes:
 
 **On governance**
 The U.S. should anchor a multi-stakeholder governance body that includes
