@@ -15,7 +15,7 @@ The project is early. The first concrete piece is **AmeriNLI**, a natural langua
 | RegioNER (NER benchmark) | Planned. No data or code yet. |
 | Benchmark evaluation scripts | Planned. See [research/benchmarks](research/benchmarks/). |
 | [AmeriXLM](models/) | Not trained. No weights. The [Hugging Face repo](https://huggingface.co/genia-americas/ameri-xlm) is a placeholder. |
-| Glapagos platform and SDK | Specs and drafts only, see [platform/](platform/) and [tools/glapp/](tools/glapp/). No platform code in this repo, and the SDK packages are not published. |
+| Glapagos platform and SDK | Specs and drafts here, see [platform/](platform/) and [tools/glapp/](tools/glapp/). Backend code is in [Glapagos-Backend](https://github.com/GENIA-Americas/Glapagos-Backend). The SDK packages are not published. |
 | Policy, strategy, and background docs | Written and in this repo. See the table below. |
 
 Order of work: [ROADMAP.md](ROADMAP.md).

@@ -1,6 +1,6 @@
 # Glapagos API, draft specification
 
-**Status: draft design (v0.1). This repo documents no public endpoint.** The routes below describe an intended API. They are not a deployed service, and no OpenAPI file is published here yet. For the platform itself, see [glapagos.com](https://www.glapagos.com).
+**Status: early design draft (v0.1).** The backend that exists lives in [Glapagos-Backend](https://github.com/GENIA-Americas/Glapagos-Backend), whose `docs/api.md` lists the endpoints it implements. The routes below are an earlier proposal and do not match that implementation, so treat them as proposals. For the platform itself, see [glapagos.com](https://www.glapagos.com).
 
 Proposed base URL: `https://api.glapagos.com/v1`
 

@@ -1,12 +1,12 @@
 # Roadmap
 
-Honest status first: AmeriXLM is not trained, and AmeriNLI and RegioNER are not fully released. This file tracks what has to happen, in order. Boxes get checked when the artifact is public.
+Status: AmeriXLM is not trained, and AmeriNLI and RegioNER are not fully released. This file tracks what has to happen, in order. Boxes get checked when the artifact is public.
 
 ## 1. Make the docs match reality
 - [x] Hub model card states "not trained yet"
 - [x] Repo docs mark unverified numbers and missing code
 
-## 2. AmeriNLI v0.1 (real data, small and honest)
+## 2. AmeriNLI v0.1 (real data, small)
 - [x] Validator, stats script, and CI in `tools/` and `.github/workflows/`
 - [ ] First batch of contributed examples under `datasets/amerinli/submissions/`
 - [x] Writing guidelines (`datasets/amerinli/GUIDELINES.md`)
