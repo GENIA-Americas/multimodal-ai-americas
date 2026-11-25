@@ -13,7 +13,7 @@ The central AI DevOps and data orchestration layer. Handles:
 - Compliance enforcement per national framework
 
 ### RaceFor.AI Network
-The hemispheric policy and industry coordination layer connecting 35 nations across 12+ regions.
+The hemispheric policy and industry coordination layer for the 35 nations of the Western Hemisphere. Active in 12+ regions (figure not independently published; some engagements are confidential).
 
 ### AI Corridor of the Americas
 Cross-border ecosystem architecture linking industrial hubs, municipal labs, and national AI strategies into a unified deployment surface.

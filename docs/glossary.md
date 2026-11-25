@@ -42,7 +42,7 @@ A framework for city-level AI experimentation and deployment, designed for Latin
 ## R
 
 **RaceFor.AI**
-The hemispheric policy and industry network. 35 nations, 12+ regions. Coordinates AI strategy across the Western Hemisphere.
+The hemispheric policy and industry network. Scope: 35 nations. Active in 12+ regions (figure not independently published; some engagements are confidential). Coordinates AI strategy across the Western Hemisphere.
 
 **Regional AI Strategy**
 The first comprehensive framework for responsible, representative, inclusive, and scalable AI development across the Western Hemisphere.
