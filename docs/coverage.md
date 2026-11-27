@@ -1,8 +1,8 @@
 # Nation and Region Coverage Map
 
-## Active Regions (12+)
+## Regional Coverage
 
-The 12+ figure is not independently published, and some engagements are confidential. This table lists only what is publicly disclosed.
+The figure of 12+ active regions is not independently published, and some engagements are confidential. This table lists only what is publicly disclosed, and it includes entries that are still in progress.
 
 ### North America
 | Nation | Status | Focus Areas |
